@@ -19,4 +19,5 @@ public class BedrijfService {
         System.out.println("in service getAllBedrijf");
         return bedrijfRepository.findAll();
     }
+
 }
