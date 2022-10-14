@@ -18,7 +18,22 @@ public class BedrijfService {
     }
 
     public Iterable<Bedrijf> getAllBedrijf() {
-        System.out.println("in service getAllBedrijf");
+        System.out.println("in service: getAllBedrijf");
         return bedrijfRepository.findAll();
+    }
+
+    public Bedrijf addBedrijf(Bedrijf bedrijf) {
+        System.out.println("in service: addBedrijf");
+        return bedrijfRepository.save(bedrijf);
+    }
+
+    public Bedrijf getById(long id) {
+        System.out.println("in service: getById");
+        return bedrijfRepository.findById(id).get();
+    }
+
+    public void deleteBedrijf(long id) {
+        System.out.println("in service: delete ");
+        bedrijfRepository.deleteById(id);
     }
 }
