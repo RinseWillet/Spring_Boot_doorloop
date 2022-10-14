@@ -18,7 +18,9 @@ public class Bedrijf {
     Integer aantalWerknemers;
     Double jaarOmzet;
 
-    //constructor methode
+    //constructor methodes
+    public Bedrijf(){};
+
     public Bedrijf(
             String naam,
             Integer aantalWerknemers,

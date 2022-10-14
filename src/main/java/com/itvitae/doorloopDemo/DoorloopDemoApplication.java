@@ -10,5 +10,4 @@ public class DoorloopDemoApplication {
 		SpringApplication.run(DoorloopDemoApplication.class, args);
 		System.out.println("Back-end is now running");
 	}
-
 }
